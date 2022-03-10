@@ -17,7 +17,8 @@ private:
  		cin>>id;
  	}
  	void setvalues1(){
- 		cout<<"Name of person :- "<<name;
+ 		cout<<"-----------------------------"<<endl;
+ 		cout<<"Name of person :- "<<name<<endl;
  		cout<<"Age of  person :- "<<age<<endl; 
  		cout<<" ID  of person :- "<<id<<endl;
  	}
@@ -42,11 +43,13 @@ public:
 };
 int main(){
 	
-	emp *obj;
+	emp obj;
+    emp *objP;
+    objP = &obj;
 
-	obj->getvalues1;
-	obj->getvalues2;
-	obj->setvalues1;
-	obj->setvalues2;
+	objP->getvalues1();
+	objP->getvalues2();
+	objP->setvalues1();
+	objP->setvalues2();
 return 0;
 }
